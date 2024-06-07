@@ -1,4 +1,4 @@
-# NLP_Feedback_System_for_news_agencies
+# NLP_Feedback_System
 
 # AI Feedback Processing Web Application
 
@@ -31,3 +31,6 @@ This web application allows users to submit feedback, which is then processed by
 ```bash
 git clone https://github.com/yourusername/feedback-processing-app.git
 cd feedback-processing-app
+
+## Description
+The .html & other .css & .js files are part of a simple web inerface design that we did for a Hackathon. The classification.py file contains the main algorithm.
