@@ -25,6 +25,9 @@ This web application allows users to submit feedback, which is then processed by
 - keybert
 - matplotlib
 - wordcloud
+- 
+## Description
+The .html & other .css & .js files are part of a simple web inerface design that we did for a Hackathon. The classification.py file contains the main algorithm.
 
 ### Clone the Repository
 
@@ -32,5 +35,4 @@ This web application allows users to submit feedback, which is then processed by
 git clone https://github.com/yourusername/feedback-processing-app.git
 cd feedback-processing-app
 
-## Description
-The .html & other .css & .js files are part of a simple web inerface design that we did for a Hackathon. The classification.py file contains the main algorithm.
+
