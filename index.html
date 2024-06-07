@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container" id="feedback-container">
+        <h1 style="color: red;">PostNOS:</h1>
+        <form id="feedback-form" method="POST">
+            <textarea name="feedback" rows="10" cols="50" placeholder="Write your feedback here..."></textarea>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <br>
+        <button id="process-button" onclick="processFeedback()">Process Feedback</button>
+    </div>
+    <div id="loading" class="loading" style="display:none;"></div>
+    <script src="{{ url_for('static', filename='particles.js') }}"></script>
+</body>
+</html>

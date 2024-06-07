@@ -1,0 +1,7 @@
+Feedback,Predicted Category,Keywords,Additional Category
+Great article on climate change! Very informative.,Suggestion,"['climate change', 'article climate', 'great article', 'climate', 'change informative']",Other
+Can you publish more articles about renewable energy?,Suggestion,"['articles renewable', 'renewable energy', 'renewable', 'publish articles', 'articles']",Other
+Can you publish more arcticles about economics management..,Suggestion,"['economics management', 'arcticles economics', 'economics', 'management', 'publish arcticles']",Economics
+I would like more articles about the politics of Netherlands! I really liked the last post,Suggestion,"['politics netherlands', 'articles politics', 'netherlands', 'netherlands really', 'articles']",Politics
+The economics section lacks complexity but I really enjoyed the topic,Suggestion,"['economics section', 'economics', 'enjoyed topic', 'topic', 'lacks complexity']",Economics
+The sports section is too short and lacks depth. It also has a different score for the game between Groningen and Utrecht,Suggestion,"['game groningen', 'groningen utrecht', 'utrecht', 'groningen', 'sports section']",Sport

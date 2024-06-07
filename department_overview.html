@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Overview</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='particles.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='particles-config.js') }}"></script>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <h1>Department Overview</h1>
+        <div class="departments-container">
+            {% for department, feedbacks in departments.items() %}
+                <h2>{{ department }}</h2>
+                <ul>
+                    {% for feedback in feedbacks %}
+                        <li>{{ feedback.Feedback }} - Keywords: {{ feedback.Keywords }}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+        <br>
+        <a href="{{ url_for('index') }}" class="button-link">Go Back</a>
+        <a href="{{ url_for('keyword_overview') }}" class="button-link">Keyword Overview</a>
+    </div>
+</body>
+</html>

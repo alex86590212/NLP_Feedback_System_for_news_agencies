@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Overview</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='particles.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='particles-config.js') }}"></script>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <h1>Keyword Overview</h1>
+        <div class="keywords-container">
+            <ul>
+                {% for keyword, count in keywords %}
+                    <li>{{ keyword }}: {{ count }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <br>
+        <a href="{{ url_for('index') }}" class="button-link">Go Back</a>
+    </div>
+</body>
+</html>
